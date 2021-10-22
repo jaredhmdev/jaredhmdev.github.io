@@ -1,2 +1,2 @@
-# jaredhmdev.github.io
-Github page - Porfolio Page
+# portfolio-v0
+Personal Portfolio (HTML/CSS3)
