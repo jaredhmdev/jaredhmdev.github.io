@@ -737,10 +737,10 @@ transform: rotate(10deg);
 }
 
 .aboutme-card__link{
-  height: 40px;
-  width: 150px;
+  height: 44px;
+  width: 170px;
   margin: 0 auto;
-  padding: 10px 37px;
+  padding: 10px 47px;
   font-size: 1.4rem;
   font-weight: 700;
   text-decoration: none;
@@ -770,6 +770,7 @@ transform: rotate(10deg);
   flex-direction: column;
   justify-items: center;
   align-items: center;
+  width: 90%;
 }
 
 .skills__title{
@@ -783,7 +784,10 @@ transform: rotate(10deg);
   position: relative;
   height: auto;
   width: 100%;
-  margin-top: 30px;
+  padding: 10px;
+  margin-top: 50px;
+  border-radius: 10px;
+  border: 1px solid var(--page-bg-secondary-color);
 }
 
 .skills-group__header{
@@ -793,5 +797,55 @@ padding: 15px;
 .skills-group__name{
   font-size: 2.3rem;
   font-weight: 500;
+  text-align: center;
+}
+
+.skill-item{
+  display: grid; 
+  grid-template-columns: 2fr 1fr; 
+  grid-template-rows: 1fr 1fr; 
+  grid-template-areas: 
+    "Name Logo"
+    "Progress-Bar Progress-Bar"; 
+
+}
+.skill-item__logo{
+  grid-area: Logo;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-item__logo > img{
+  max-width: 60px;
+}
+
+
+.skill-item__name{
+  grid-area: Name;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-item__name> h2{
+ font-size: 1.6rem;
+ font-style: italic;
+ font-weight: 400;
+}
+
+.skill-item__progressbar{
+  position: relative;
+  grid-area: Progress-Bar;
+  margin: 0 auto;
+  height: 15px;
+  width: 90%;
+  background-color: var(--page-bg-secondary-color);
+}
+
+.skill-item__bar--progress{
+  height: 15px;
+  width: 150px;
+  background-color: var(--header-bg-primary-color);
 }
 
